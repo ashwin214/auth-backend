@@ -13,11 +13,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(bodyParser.json());
-app.use(
-  cors({
-    origin: "https://auth-frontend-three-tawny.vercel.app",
-  }),
-);
+app.use(cors());
 app.use("/auth", AuthRouter);
 
 app.listen(PORT, () => {
