@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://auth-frontend-three-tawny.vercel.app",
   }),
 );
 app.use("/auth", AuthRouter);
